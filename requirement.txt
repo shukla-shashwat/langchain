@@ -1,0 +1,4 @@
+# pip install -qU "langchain[anthropic] 
+dotenv
+# pip intall -U  langchain-google-genai
+
