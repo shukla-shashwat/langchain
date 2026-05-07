@@ -1,4 +1,6 @@
 .evv
 env
+.env
 env */
 *.env   
+telegram_data.json

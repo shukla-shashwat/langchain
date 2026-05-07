@@ -4,4 +4,6 @@ dotenv
 telethon
 langchain_community
 pandas
-
+# pip install python-telegram-bot
+# pip install notion-client 
+# pip install intent_parser

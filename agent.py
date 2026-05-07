@@ -1,10 +1,13 @@
-from langchain_google_genai import GoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
-llm = GoogleGenerativeAI(model="gemini-2.5-pro")
-response = llm.invoke("Sing a ballad of LangChain.")
+llm_model = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash-lite",
+    temperature=1,
+    max_tokens=299
+)
 
-print(response )
+response = llm_model.invoke("What is 2 + 2? Reply with just the number.")
+print(response.content)
